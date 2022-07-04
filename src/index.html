@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volcano Robot Experiment</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Volcano Robot Experiment">
+    <link rel="icon" type="image/x-icon" href="WoodkidLogo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body style="overflow: hidden;">
+    <div class="experience"></div>
+    <div class="credits">
+        Works with PS4 and XBOX 360 controllers
+        <br>Robot inspired from <a href="https://www.youtube.com/watch?v=mIMgSVuW0y0" target="_blank">Woodkid Volcano Live</a> by <a href="https://github.com/houssemlachtar" target="_blank">Houssem Lachtar</a>
+    </div>
+    <div class="intro">
+        <div class="title">Woodkid Volcano Robot</div>
+        <div class="sub-title sub-title-1">Inspired from the live version of the Volcano song by Woodkid</div>
+        <div class="sub-title sub-title-2">Works with keyboard and PS4 controller</div>
+    </div>
+    <div class="desktop-only">
+        <div class="title">Desktop only</div>
+    </div>
+    <audio id="myAudio" loop autoplay hidden="true" type="audio/mpeg"><source src="./WOODKID - Volcano.mp3"/></audio>
+</body>
+<script>
+    document.getElementById("myAudio").volume = 0.2;
+</script>
+
+</html>

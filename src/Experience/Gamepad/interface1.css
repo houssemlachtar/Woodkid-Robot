@@ -1,0 +1,186 @@
+.gamepad-interface {
+  position: fixed;
+  bottom: -40px;
+  left: 0;
+  width: 600px;
+  height: 400px;
+}
+html.debug-hidden .gamepad-interface {
+  display: none;
+}
+.gamepad-interface .input.is-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.gamepad-interface .input.is-button.is-buttonCircle {
+  top: calc(50% + 0%);
+  left: calc(50% + 25%);
+  transform: translate(-50%, -50%) translate(100%, 0%);
+}
+.gamepad-interface .input.is-button.is-buttonTriangle {
+  top: calc(50% + 0%);
+  left: calc(50% + 25%);
+  transform: translate(-50%, -50%) translate(0%, -100%);
+}
+.gamepad-interface .input.is-button.is-buttonSquare {
+  top: calc(50% + 0%);
+  left: calc(50% + 25%);
+  transform: translate(-50%, -50%) translate(-100%, 0%);
+}
+.gamepad-interface .input.is-button.is-buttonCross {
+  top: calc(50% + 0%);
+  left: calc(50% + 25%);
+  transform: translate(-50%, -50%) translate(0%, 100%);
+}
+.gamepad-interface .input.is-button.is-buttonRight {
+  top: calc(50% + 0%);
+  left: calc(50% - 25%);
+  transform: translate(-50%, -50%) translate(100%, 0%);
+}
+.gamepad-interface .input.is-button.is-buttonUp {
+  top: calc(50% + 0%);
+  left: calc(50% - 25%);
+  transform: translate(-50%, -50%) translate(0%, -100%);
+}
+.gamepad-interface .input.is-button.is-buttonLeft {
+  top: calc(50% + 0%);
+  left: calc(50% - 25%);
+  transform: translate(-50%, -50%) translate(-100%, 0%);
+}
+.gamepad-interface .input.is-button.is-buttonDown {
+  top: calc(50% + 0%);
+  left: calc(50% - 25%);
+  transform: translate(-50%, -50%) translate(0%, 100%);
+}
+.gamepad-interface .input.is-button.is-buttonJoystickLeft {
+  top: calc(50% + 15%);
+  left: calc(50% - 10%);
+  width: 10%;
+}
+.gamepad-interface .input.is-button.is-buttonJoystickRight {
+  top: calc(50% + 15%);
+  left: calc(50% + 10%);
+  width: 10%;
+}
+.gamepad-interface .input.is-button.is-buttonL1 {
+  top: calc(50% - 23%);
+  left: calc(50% - 25%);
+  transform: translate(-50%, -50%);
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 10%;
+  aspect-ratio: 3;
+}
+.gamepad-interface .input.is-button.is-buttonL2 {
+  top: calc(50% - 30%);
+  left: calc(50% - 25%);
+  transform: translate(-50%, -50%);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 10%;
+  aspect-ratio: 2;
+}
+.gamepad-interface .input.is-button.is-buttonR1 {
+  top: calc(50% - 23%);
+  left: calc(50% + 25%);
+  transform: translate(-50%, -50%);
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 10%;
+  aspect-ratio: 3;
+}
+.gamepad-interface .input.is-button.is-buttonR2 {
+  top: calc(50% - 30%);
+  left: calc(50% + 25%);
+  transform: translate(-50%, -50%);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 10%;
+  aspect-ratio: 2;
+}
+.gamepad-interface .input.is-button.is-buttonTouchpad {
+  top: calc(50% - 15%);
+  left: calc(50%);
+  width: 25%;
+  aspect-ratio: 2;
+  border-radius: 10px;
+}
+.gamepad-interface .input.is-button.is-buttonShare {
+  top: calc(50% - 20%);
+  left: calc(50% - 15%);
+  width: 2.5%;
+  aspect-ratio: 0.5;
+  border-radius: 10px;
+}
+.gamepad-interface .input.is-button.is-buttonOptions {
+  top: calc(50% - 20%);
+  left: calc(50% + 15%);
+  width: 2.5%;
+  aspect-ratio: 0.5;
+  border-radius: 10px;
+}
+.gamepad-interface .input.is-button.is-buttonHome {
+  top: calc(50% + 5%);
+  left: calc(50%);
+}
+.gamepad-interface .input.is-button.is-active .fill {
+  opacity: 1;
+  transition-duration: 0s;
+}
+.gamepad-interface .input.is-button .fill {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  background: #fff;
+  opacity: 0;
+  transition-duration: 0.25s;
+  transition-property: opacity;
+  will-change: opacity;
+  transform-origin: bottom center;
+}
+.gamepad-interface .input.is-joystick {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.gamepad-interface .input.is-joystick .tip {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.gamepad-interface .input.is-joystick.is-joystickLeft {
+  top: calc(50% + 15%);
+  left: calc(50% - 10%);
+}
+.gamepad-interface .input.is-joystick.is-joystickRight {
+  top: calc(50% + 15%);
+  left: calc(50% + 10%);
+}
