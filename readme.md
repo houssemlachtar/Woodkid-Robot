@@ -1,6 +1,10 @@
 # Woodkid Robot
 <p align="center">
-A live audio visualization with three.js
+3D robot inspired from the song volcano-Woodkid
+<br>
+Works with keyboard and PS4 controller
+<br>
+Fully customizable user-experience.
 <br>
 <br>        
 <a href="https://woodkid-robot.vercel.app">
